@@ -112,9 +112,8 @@ var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"362dbb123a90
 
       {
       
-          //$zoho.salesiq.visitor.name("Frank daniel");
-          //$zoho.salesiq.visitor.email("deepan.selvaraj@zohocorp.com");
-          //$zoho.salesiq.visitor.contactnumber("12345678910");
+           $zoho.salesiq.floatbutton.visible("hide");
+	  $zoho.salesiq.chatbutton.visible("hide");
           $zoho.salesiq.chat.messagehint("Quote your thoughts here");    
           $zoho.salesiq.visitor.info({"SpaceX":"Falcon"});
           $zoho.salesiq.chat.systemmessages({"agentinfomessage":"Hello there"});
@@ -150,6 +149,11 @@ var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"362dbb123a90
       "callback":function(value){ }
    });*/
       }
+    
+    jQuery(document).on("click", "#openchatlink", function () {
+	     $zoho.salesiq.floatwindow.visible("show");
+	     $zoho.salesiq.chatwindow.visible("show");
+      });
     </script>
 </body>
-</html>
+</html>    
