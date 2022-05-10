@@ -1,2 +1,2 @@
-# deepanrs.github.io
+# deepanrs
 Website for Live music
